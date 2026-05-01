@@ -21,6 +21,61 @@ PPO updates the policy gradually to ensure stable learning while enabling the ag
 - ImageIO
 - Google Colab
 
+## Reinforcement Learning Setup
+
+### Agent
+
+The Lunar Lander spacecraft.
+
+### Environment
+
+`LunarLander-v3` from Gymnasium.
+
+### Actions
+
+The agent can perform four discrete actions:
+
+1. Do nothing
+2. Fire left engine
+3. Fire main engine
+4. Fire right engine
+
+### Reward System
+
+Positive rewards are given for:
+
+* Safe landing
+* Stable orientation
+* Low landing velocity
+
+Negative rewards are given for:
+
+* Crashing
+* Drifting away from the landing zone
+* Excessive fuel usage
+
+### Goal
+
+The objective is to maximize cumulative reward by learning an optimal landing strategy.
+
+---
+
+## PPO (Proximal Policy Optimization)
+
+This project uses PPO, a policy-based Reinforcement Learning algorithm.
+
+PPO improves learning stability by preventing excessively large policy updates during training.
+
+Instead of learning fixed rules, the agent continuously interacts with the environment, receives rewards, and gradually improves its policy through iterative optimization.
+
+### PPO Training Workflow
+
+1. Interact with the environment
+2. Collect experiences
+3. Compute rewards
+4. Update policy network
+5. Repeat until performance improves
+
 ## Random Agent (Before Training)
 The untrained agent takes random actions and crashes frequently.
 
