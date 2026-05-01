@@ -29,9 +29,9 @@ The untrained agent takes random actions and crashes frequently.
 ## Training Performance
 The graph below shows the improvement in rewards during training.
 
-Light blue: raw episode rewards
-Dark blue: smoothed reward trend
-Green dashed line: solved threshold
+- Light blue: raw episode rewards
+- Dark blue: smoothed reward trend
+- Green dashed line: solved threshold
 
 <img width="1500" height="600" alt="reward_curve" src="https://github.com/user-attachments/assets/96664e16-f2fb-4c2d-896b-6dd2e3d7b183" />
 
@@ -47,10 +47,10 @@ Training performance improved significantly over time, with rewards increasing f
 
 The trained agent successfully learns to land between the flags consistently.
 
-Initial performance: highly negative rewards
-Final performance: stable positive rewards
-Mean evaluation reward improved significantly after training
-Agent successfully learned stable landing behaviour
+- Initial performance: highly negative rewards
+- Final performance: stable positive rewards
+- Mean evaluation reward improved significantly after training
+- Agent successfully learned stable landing behaviour
 
 ## Key Learning
 
